@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+
+
+<html>
+
+<head>
+  <title>Apple</title>
+<link type="text/css" rel="stylesheet" href="main.css">
+<script type="text/javascript">
+function validate()
+{
+
+         if(document.f1.fname.value=="")
+         {
+             alert("Plz enter the first name");
+             return false;
+         }
+         if(document.f1.lname.value=="")
+         {
+             alert("Plz enter the last name");
+             return false
+         }
+         if(document.f1.age.value=="")
+         {
+             alert("Plz enter the age");
+         }
+         if(document.f1.g1[0].checked=="" && document.f1.g1[1].checked=="")
+         {
+             alert("Plz select the gender");
+             return false;
+         }
+         if(document.f1.email.value=="")
+         {
+             alert("Plz enter the email");
+             return false;
+         }
+         if(document.f1.add.value=="")
+         {
+             alert("Plz enter the address");
+             return false;
+         }
+         return true;
+     }
+
+
+
+
+
+</script>
+</head>
+
+<body bgcolor="black">
+<center>
+<img src="steve2.jpg" width=800px height=200px></img>
+
+<table bgcolor="black" cellpadding=50% cellspacing=50%>
+<tr>
+<td><a href="apple.html"><img src="apple3.jpg" width=150px></img></a></td>
+<td><p><a href="iphone.html">iPHONE</a></td>
+<td><p><a href="ipad.html">iPAD</a></td>
+<td><p><a href="imac.html">iMAC</a></td>
+<td><p><a href="iwatch.html">iWATCH</a></td>
+<td><p><a href="isupport.html">iSUPPORT</a></td>
+<td><p><a href="Geolocation.html">iLOCATION</a></td>
+</tr>
+</table>
+<div><img src="tp.jpg" border="0" width=1316px height=500px></img></div>
+
+
+<H1><b>PLEASE ENTER YOUR CONTACT DETAILS</b></H1>
+</center>
+<form name="f1" action="http://localhost:89/~C/Users/Yash/Desktop/ad.php" method="POST">
+<pre>
+<p>First name:&nbsp;&nbsp;<input type="text" name="fname" value=""/><br></p>
+<p>Last name :&nbsp;&nbsp;<input type="text" name="lname" value=""/><br></p>
+<p>Age          :&nbsp;&nbsp;<input type="text" name="age" value=""/><br></p>
+<p>Email     :&nbsp;&nbsp;<input type="text" name="email" value=""/><br></p>
+<p>Address   :&nbsp;&nbsp;<input type="text" name="add" value=""/><br> </p>
+ <center>     &nbsp;&nbsp;&nbsp;&nbsp;<input type="Submit" name="btn" value="SUBMIT" onclick="return validate()"/>  &nbsp;&nbsp;&nbsp;&nbsp;<input type="reset" name="res" value="RESET"> </center>
+</form>
+</pre>
+
+
+
+</body>
+</html>
